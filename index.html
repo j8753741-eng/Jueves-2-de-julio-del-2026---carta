@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jueves 2 de Julio del 2026 ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Cormorant Garamond',serif;
+background:
+radial-gradient(circle at top,#3b2157 0%,#1b1128 28%,#090912 58%,#020204 100%);
+overflow-x:hidden;
+color:#fff;
+
+}
+
+/*--------------------------
+ESTRELLAS
+---------------------------*/
+
+.stars{
+
+position:fixed;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+z-index:-5;
+
+}
+
+.star{
+
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:shine linear infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+opacity:.2;
+transform:scale(.6);
+}
+
+50%{
+opacity:1;
+transform:scale(1.8);
+}
+
+100%{
+opacity:.2;
+transform:scale(.6);
+}
+
+}
+
+/*--------------------------
+AURORA
+---------------------------*/
+
+.aurora{
+
+position:fixed;
+width:900px;
+height:900px;
+border-radius:50%;
+filter:blur(130px);
+opacity:.25;
+animation:aurora 16s ease-in-out infinite alternate;
+pointer-events:none;
+z-index:-4;
+
+background:
+radial-gradient(circle,#d79bff,#8d5cff,#43206e,transparent);
+
+}
+
+.a1{
+
+top:-350px;
+left:-250px;
+
+}
+
+.a2{
+
+bottom:-380px;
+right:-220px;
+
+animation-delay:7s;
+
+}
+
+@keyframes aurora{
+
+from{
+
+transform:translateY(0) scale(1);
+
+}
+
+to{
+
+transform:translateY(70px) scale(1.25);
+
+}
+
+}
+
+/*--------------------------
+PÉTALOS
+---------------------------*/
+
+.petals{
+
+position:fixed;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+z-index:-2;
+
+}
+
+.petal{
+
+position:absolute;
+top:-50px;
+font-size:20px;
+opacity:.7;
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-80px)
+translateX(0)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:.9;
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+translateX(90px)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/*--------------------------
+CONTENEDOR
+---------------------------*/
+
+.wrapper{
+
+width:100%;
+display:flex;
+justify-content:center;
+padding:70px 18px;
+
+}
+
+.letter{
+
+position:relative;
+
+max-width:980px;
+width:100%;
+
+padding:70px 55px;
+
+border-radius:38px;
+
+background:
+
+linear-gradient(
+180deg,
+rgba(255,255,255,.18),
+rgba(255,255,255,.08)
+);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:
+
+0 0 80px rgba(218,163,255,.18),
+0 0 180px rgba(102,52,176,.18),
+0 35px 80px rgba(0,0,0,.55);
+
+overflow:hidden;
+
+}
+
+/* BORDES BRILLANTES */
+
+.letter::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+padding:2px;
+
+border-radius:38px;
+
+background:
+
+linear-gradient(
+130deg,
+rgba(255,255,255,.75),
+rgba(210,145,255,.4),
+rgba(255,255,255,.08),
+rgba(255,255,255,.75)
+);
+
+-webkit-mask:
+
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite:xor;
+
+mask-composite:exclude;
+
+pointer-events:none;
+
+}
+
+.letter::after{
+
+content:"";
+
+position:absolute;
+
+width:450px;
+height:450px;
+
+background:
+
+radial-gradient(circle,
+rgba(255,180,255,.16),
+transparent 70%);
+
+top:-220px;
+right:-180px;
+
+filter:blur(20px);
+
+}
+
+/*--------------------------
+ORNAMENTOS
+---------------------------*/
+
+.corner{
+
+position:absolute;
+font-size:34px;
+opacity:.25;
+color:#ffd8ff;
+
+}
+
+.c1{
+
+top:18px;
+left:22px;
+
+}
+
+.c2{
+
+top:18px;
+right:22px;
+
+}
+
+.c3{
+
+bottom:18px;
+left:22px;
+
+}
+
+.c4{
+
+bottom:18px;
+right:22px;
+
+}
+
+/*--------------------------
+ENCABEZADO
+---------------------------*/
+
+.date{
+
+text-align:center;
+
+letter-spacing:4px;
+
+font-size:15px;
+
+color:#edd8ff;
+
+margin-bottom:10px;
+
+}
+
+.title{
+
+font-family:'Cinzel',serif;
+
+text-align:center;
+
+font-size:38px;
+
+line-height:1.45;
+
+color:white;
+
+text-shadow:
+
+0 0 18px rgba(255,255,255,.35),
+0 0 35px rgba(217,166,255,.35);
+
+margin-bottom:30px;
+
+}
+
+.divider{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:16px;
+
+margin-bottom:35px;
+
+}
+
+.divider span{
+
+font-size:24px;
+color:#ffd4ff;
+
+}
+
+.line{
+
+width:120px;
+height:1px;
+
+background:
+
+linear-gradient(
+to right,
+transparent,
+#ffd9ff,
+transparent);
+
+}
+
+.opening{
+
+font-family:'Great Vibes',cursive;
+
+font-size:54px;
+
+text-align:center;
+
+color:#ffdffb;
+
+margin-bottom:35px;
+
+text-shadow:
+
+0 0 20px rgba(255,190,255,.45);
+
+}
+
+.content{
+
+font-size:27px;
+
+line-height:2.15;
+
+color:#fffdfd;
+
+text-align:justify;
+
+}
+
+.content p{
+
+margin-bottom:28px;
+
+}
+
+.content strong{
+
+color:#ffe7ff;
+
+font-weight:700;
+
+text-shadow:
+
+0 0 10px rgba(255,255,255,.25);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars">
+
+<span class="star" style="left:3%;top:8%;animation-duration:3s;"></span>
+<span class="star" style="left:10%;top:18%;animation-duration:5s;"></span>
+<span class="star" style="left:18%;top:7%;animation-duration:4s;"></span>
+<span class="star" style="left:26%;top:22%;animation-duration:6s;"></span>
+<span class="star" style="left:35%;top:11%;animation-duration:3.5s;"></span>
+<span class="star" style="left:44%;top:5%;animation-duration:4.5s;"></span>
+<span class="star" style="left:56%;top:16%;animation-duration:5s;"></span>
+<span class="star" style="left:67%;top:9%;animation-duration:3s;"></span>
+<span class="star" style="left:78%;top:20%;animation-duration:6s;"></span>
+<span class="star" style="left:88%;top:12%;animation-duration:4s;"></span>
+<span class="star" style="left:94%;top:6%;animation-duration:5s;"></span>
+
+</div>
+
+<div class="aurora a1"></div>
+<div class="aurora a2"></div>
+
+<div class="petals">
+
+<span class="petal" style="left:6%;animation-duration:14s;">🌸</span>
+<span class="petal" style="left:19%;animation-duration:18s;">🌺</span>
+<span class="petal" style="left:34%;animation-duration:15s;">🌸</span>
+<span class="petal" style="left:49%;animation-duration:17s;">💮</span>
+<span class="petal" style="left:62%;animation-duration:13s;">🌸</span>
+<span class="petal" style="left:77%;animation-duration:16s;">🌺</span>
+<span class="petal" style="left:91%;animation-duration:18s;">🌸</span>
+
+</div>
+
+<div class="wrapper">
+
+<div class="letter">
+
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
+
+<div class="date">
+JUEVES • 2 DE JULIO DEL 2026
+</div>
+
+<h1 class="title">
+EN ESTA NOCHE DE JUEVES,<br>
+MI CORAZÓN VUELVE A ELEGIRTE<br>
+CON MÁS AMOR QUE NUNCA
+</h1>
+
+<div class="divider">
+
+<div class="line"></div>
+<span>🤍</span>
+<div class="line"></div>
+
+</div>
+
+<div class="opening">
+Para la mujer que convirtió mi vida en el lugar más hermoso del universo...
+</div>
+
+<div class="content">
+
+<p><strong>Mi niña hermosa:</strong></p>
+
+<p>
+Esta noche de jueves, 2 de julio de 2026, mientras el cielo se llena de estrellas y el mundo poco a poco se queda en silencio, sentí la necesidad de escribirte una vez más. Porque hay noches en las que mi corazón ya no puede guardar todo lo que siente por ti, y esta es una de ellas.
+</p>
+
+<p>
+Amarte se ha convertido en la parte más bonita de mi vida. No existe un solo día en el que no despiertes en mis pensamientos, ni una sola noche en la que no seas el último nombre que pronuncia mi corazón antes de dormir. Eres el motivo por el que sonrío sin darme cuenta, el refugio donde encuentra paz mi alma y la mujer que hizo que mi vida tuviera un significado completamente diferente.
+</p>
+
+<p>
+A veces me pregunto cómo es posible amar tanto a una persona, y la respuesta siempre eres tú. Porque cada mirada tuya, cada palabra, cada risa, cada pequeño detalle de ti logra enamorarme una vez más. Es como si cada día descubriera una nueva razón para entregarte todo mi corazón.
+</p>
+
+<p>
+Quiero que sepas que no solo amo tus momentos felices; también amo estar contigo cuando las cosas son difíciles. Quiero ser el abrazo que calme tus miedos, la mano que nunca sueltes, el hombro donde siempre puedas descansar y la persona que te recuerde todos los días lo increíble, valiosa y maravillosa que eres.
+</p>
+
+<p>
+Mi amor por ti no conoce horarios, distancias ni límites. Es un amor que crece con cada amanecer y que en noches como esta parece inmenso, tan inmenso que las palabras apenas alcanzan para describirlo. Si pudiera contar cada latido de mi corazón, descubrirías que todos llevan tu nombre.
+</p>
+
+<p>
+Sueño con el día en que ya no tenga que extrañarte por las noches, porque podré mirarte antes de dormir, darte un beso en la frente, abrazarte muy fuerte y decirte al oído cuánto te amo, sabiendo que despertaré a tu lado al comenzar un nuevo día.
+</p>
+
+<p>
+Gracias por existir, por llegar a mi vida y por enseñarme que el amor verdadero sí existe. Eres mi sueño favorito, mi casualidad más hermosa, mi presente más valioso y el futuro que deseo construir para toda la vida.
+</p>
+
+<p>
+Y mientras esta noche avanza y las estrellas siguen iluminando el cielo, yo solo quiero hacerte una promesa más: pase lo que pase, seguiré eligiéndote cada día, seguiré cuidando de este amor con toda mi alma y seguiré amándote con una intensidad que ni el tiempo ni la distancia podrán apagar jamás.
+</p>
+
+<p>
+<strong>Te amo con todo mi corazón, con toda mi alma y con cada parte de mi existencia. Hoy, mañana y siempre serás el amor más grande, más bonito y más eterno que mi vida pudo encontrar. ❤️</strong>
+</p>
+
+<style>
+
+/*=========================
+FRASE FINAL NEÓN
+=========================*/
+
+.neon-love{
+
+margin-top:70px;
+margin-bottom:55px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:42px;
+line-height:1.7;
+
+color:#f5d7ff;
+
+text-shadow:
+0 0 8px #ffffff,
+0 0 16px #f7b4ff,
+0 0 28px #d77dff,
+0 0 45px #b74cff,
+0 0 70px #8f2dff;
+
+animation:neonGlow 3.8s ease-in-out infinite alternate;
+
+}
+
+@keyframes neonGlow{
+
+from{
+
+transform:scale(1);
+filter:brightness(1);
+
+}
+
+to{
+
+transform:scale(1.015);
+filter:brightness(1.25);
+
+}
+
+}
+
+/*=========================
+BOTÓN
+=========================*/
+
+.poem-button{
+
+display:flex;
+justify-content:center;
+
+margin-top:25px;
+margin-bottom:20px;
+
+}
+
+.poem-button a{
+
+position:relative;
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:20px;
+font-weight:700;
+
+color:white;
+
+background:linear-gradient(135deg,#8e44ff,#d46cff,#ff8ae2);
+
+overflow:hidden;
+
+transition:.45s;
+
+box-shadow:
+
+0 0 20px rgba(185,95,255,.45),
+0 0 45px rgba(149,58,255,.35);
+
+}
+
+.poem-button a::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:rgba(255,255,255,.45);
+
+transform:skewX(-25deg);
+
+transition:.8s;
+
+}
+
+.poem-button a:hover::before{
+
+left:140%;
+
+}
+
+.poem-button a:hover{
+
+transform:translateY(-5px) scale(1.04);
+
+box-shadow:
+
+0 0 35px rgba(221,166,255,.7),
+0 0 70px rgba(157,66,255,.55);
+
+}
+
+.signature{
+
+margin-top:60px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:38px;
+
+color:#ffe7ff;
+
+text-shadow:0 0 15px rgba(255,255,255,.4);
+
+}
+
+.footer-stars{
+
+margin-top:18px;
+
+font-size:24px;
+
+letter-spacing:10px;
+
+text-align:center;
+
+opacity:.85;
+
+}
+
+@media(max-width:768px){
+
+.title{
+
+font-size:28px;
+
+}
+
+.opening{
+
+font-size:42px;
+
+}
+
+.content{
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+.neon-love{
+
+font-size:30px;
+
+}
+
+.poem-button a{
+
+font-size:18px;
+
+padding:16px 28px;
+
+}
+
+.signature{
+
+font-size:31px;
+
+}
+
+}
+
+</style>
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars">
+
+<span class="star" style="left:3%;top:8%;animation-duration:3s;"></span>
+<span class="star" style="left:10%;top:18%;animation-duration:5s;"></span>
+<span class="star" style="left:18%;top:7%;animation-duration:4s;"></span>
+<span class="star" style="left:26%;top:22%;animation-duration:6s;"></span>
+<span class="star" style="left:35%;top:11%;animation-duration:3.5s;"></span>
+<span class="star" style="left:44%;top:5%;animation-duration:4.5s;"></span>
+<span class="star" style="left:56%;top:16%;animation-duration:5s;"></span>
+<span class="star" style="left:67%;top:9%;animation-duration:3s;"></span>
+<span class="star" style="left:78%;top:20%;animation-duration:6s;"></span>
+<span class="star" style="left:88%;top:12%;animation-duration:4s;"></span>
+<span class="star" style="left:94%;top:6%;animation-duration:5s;"></span>
+
+</div>
+
+<div class="aurora a1"></div>
+<div class="aurora a2"></div>
+
+<div class="petals">
+
+<span class="petal" style="left:6%;animation-duration:14s;">🌸</span>
+<span class="petal" style="left:19%;animation-duration:18s;">🌺</span>
+<span class="petal" style="left:34%;animation-duration:15s;">🌸</span>
+<span class="petal" style="left:49%;animation-duration:17s;">💮</span>
+<span class="petal" style="left:62%;animation-duration:13s;">🌸</span>
+<span class="petal" style="left:77%;animation-duration:16s;">🌺</span>
+<span class="petal" style="left:91%;animation-duration:18s;">🌸</span>
+
+</div>
+
+<div class="wrapper">
+
+<div class="letter">
+
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
+
+<div class="date">
+JUEVES • 2 DE JULIO DEL 2026
+</div>
+
+<h1 class="title">
+EN ESTA NOCHE DE JUEVES,<br>
+MI CORAZÓN VUELVE A ELEGIRTE<br>
+CON MÁS AMOR QUE NUNCA
+</h1>
+
+<div class="divider">
+
+<div class="line"></div>
+<span>🤍</span>
+<div class="line"></div>
+
+</div>
+
+<div class="opening">
+Para la mujer que convirtió mi vida en el lugar más hermoso del universo...
+</div>
+
+<div class="content">
+
+<p><strong>Mi niña hermosa:</strong></p>
+
+<p>
+Esta noche de jueves, 2 de julio de 2026, mientras el cielo se llena de estrellas y el mundo poco a poco se queda en silencio, sentí la necesidad de escribirte una vez más. Porque hay noches en las que mi corazón ya no puede guardar todo lo que siente por ti, y esta es una de ellas.
+</p>
+
+<p>
+Amarte se ha convertido en la parte más bonita de mi vida. No existe un solo día en el que no despiertes en mis pensamientos, ni una sola noche en la que no seas el último nombre que pronuncia mi corazón antes de dormir. Eres el motivo por el que sonrío sin darme cuenta, el refugio donde encuentra paz mi alma y la mujer que hizo que mi vida tuviera un significado completamente diferente.
+</p>
+
+<p>
+A veces me pregunto cómo es posible amar tanto a una persona, y la respuesta siempre eres tú. Porque cada mirada tuya, cada palabra, cada risa, cada pequeño detalle de ti logra enamorarme una vez más. Es como si cada día descubriera una nueva razón para entregarte todo mi corazón.
+</p>
+
+<p>
+Quiero que sepas que no solo amo tus momentos felices; también amo estar contigo cuando las cosas son difíciles. Quiero ser el abrazo que calme tus miedos, la mano que nunca sueltes, el hombro donde siempre puedas descansar y la persona que te recuerde todos los días lo increíble, valiosa y maravillosa que eres.
+</p>
+
+<p>
+Mi amor por ti no conoce horarios, distancias ni límites. Es un amor que crece con cada amanecer y que en noches como esta parece inmenso, tan inmenso que las palabras apenas alcanzan para describirlo. Si pudiera contar cada latido de mi corazón, descubrirías que todos llevan tu nombre.
+</p>
+
+<p>
+Sueño con el día en que ya no tenga que extrañarte por las noches, porque podré mirarte antes de dormir, darte un beso en la frente, abrazarte muy fuerte y decirte al oído cuánto te amo, sabiendo que despertaré a tu lado al comenzar un nuevo día.
+</p>
+
+<p>
+Gracias por existir, por llegar a mi vida y por enseñarme que el amor verdadero sí existe. Eres mi sueño favorito, mi casualidad más hermosa, mi presente más valioso y el futuro que deseo construir para toda la vida.
+</p>
+
+<p>
+Y mientras esta noche avanza y las estrellas siguen iluminando el cielo, yo solo quiero hacerte una promesa más: pase lo que pase, seguiré eligiéndote cada día, seguiré cuidando de este amor con toda mi alma y seguiré amándote con una intensidad que ni el tiempo ni la distancia podrán apagar jamás.
+</p>
+
+<p>
+<strong>Te amo con todo mi corazón, con toda mi alma y con cada parte de mi existencia. Hoy, mañana y siempre serás el amor más grande, más bonito y más eterno que mi vida pudo encontrar. ❤️</strong>
+</p>
+
+<div class="neon-love">
+
+Y si alguna vez las estrellas dejaran de iluminar el cielo, si la luna olvidara cómo acompañar la noche, si el tiempo decidiera detener cada uno de sus segundos y el universo entero perdiera su inmensidad, aun así existiría una luz imposible de apagar: la que nació el día en que llegaste a mi vida. Porque mi alma aprendió a pronunciar tu nombre como si fuera una oración eterna, mi corazón encontró en ti su único hogar y mi destino comprendió que toda la eternidad tendría un solo significado... amarte por siempre, con toda la fuerza de mi existencia, mi hermosa y eterna <strong>VALERIA PETRO VILLAZÓN.</strong>
+
+</div>
+
+<div class="poem-button">
+
+<a href="PEGA_AQUÍ_EL_LINK_DEL_POEMA"
+target="_blank">
+
+✨ Abrir el poema de esta noche ✨
+
+</a>
+
+</div>
+
+<div class="signature">
+
+Con todo el amor que existe dentro de mi corazón...
+
+</div>
+
+<div class="footer-stars">
+
+🤍 ✦ 🤍 ✦ 🤍 ✦ ❤️ ✦ 🤍 ✦ 🤍 ✦ 🤍
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
